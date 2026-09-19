@@ -1,0 +1,1408 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restraunt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("submenu")
+    .classList.toggle("show");
+
+}
+
+</script>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items"
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                  <li class="dropdown">
+
+    <a href="javascript:void(0)" onclick="toggleMenu()">
+        Menu ▼
+    </a>
+
+    <ul class="submenu" id="submenu">
+
+        <li>
+            <a href="#food-section">
+               🍝food
+            </a>
+        </li>
+
+        <li>
+            <a href="#drinks-section">
+                🍹 drinks
+            </a>
+        </li>
+
+        <li>
+            <a href="#dessert-section">
+                🍰 Desserts
+            </a>
+        </li>
+
+    </ul>
+
+</li>
+
+                
+                <li><a href="#testimonials">Reviews</a></li>
+                
+                <li class="dropdown">
+
+    <a href="javascript:void(0)" onclick="toggleBillMenu()">
+         Bill ▼
+    </a>
+
+    <ul class="submenu" id="billMenu">
+
+        <li>
+            <a href="#order-list">
+                🧾 View Bill
+            </a>
+        </li>
+
+        <li>
+            <a href="#total-bill">
+                💰 Total Amount
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" onclick="finalPlaceOrder()">
+                ❤️ Place Order
+            </a>
+        </li>
+       
+
+    </ul>
+
+</li>
+                
+      <li><a href="#contact">Contact</a></li>         
+                
+            </ul>
+
+
+</ul>
+
+            <h1 class="logo">RS</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healty, it is good for our health.</p>
+            <a href="#WELCOME" class="btn btn-primary">WELCOME💖</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">ABOUT US:-</p>
+                <h2>We've been making healthy food last for 10 years</h2>
+                <p>
+                   we believe food is more than just a dish — it’s a story, a celebration, and a way to bring people together. Our chefs carefully craft every recipe using fresh ingredients, rich spices, and modern culinary creativity to deliver flavors that leave a lasting impression.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+            </div>
+        </div>
+    </section>
+    <section id="food">
+        <h2>Types of food</h2>
+        <div class="food-container container">
+            <div class="food-type fruite">
+                <div class="img-container">
+                    <img src="https://www.bitesbee.com/wp-content/uploads/2021/09/banner-3.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>food </h3>
+                        <a href="https://en.wikipedia.org/wiki/food" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="https://i.ytimg.com/vi/ZiTY9CHU8o8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDakiraw06AtkNbuT-C4ZwYJ4_xCw" alt="error" />
+                    <div class="img-content">
+                        <h3> cold drinks</h3>
+                        <a href="https://en.wikipedia.org/wiki/Drinks" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grin">
+                <div class="img-container">
+                    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/06/LINK-TRAFFIC-18-1200x675.jpg" />
+                    <div class="img-content">
+                        <h3>sweet-desserts</h3>
+                        <a href="https://en.wikipedia.org/wiki/desserts" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="food-menu">
+        <h2 class="food-menu-heading">Aaj Kya Khana Bana Hai?</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <div id="food-section"></div>
+                    <h2 class="food-titile">Food Menu Item 1:- MEDITERRANEAN - STYLE SALAD</h2>
+                    <p>
+                       The dish commonly includes avocado, baby spinach or arugula, kalamata olives, cherry tomatoes, and crumbled feta cheese.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('MEDITERRANEAN-STYLE SALAD',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food -titile">Food Menu Item 2:- OATMEAL</h2></h2>
+                    <p>
+                        The dish is topped with sliced bananas, various nuts(including almonds and walnuts), anmd what appears to be granola.
+                    </p>
+                    <p class="food-price">Price: &#8377; 150</p>
+                     <div class="bottom-order">
+   <button onclick="addToBill('OATMEAL',150)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 3:- GREEN VEGETABLES </h2>
+                    <p>
+                       A healthy bowl of green vegetables and healthy fats, likely including the Avocado, Broccoli, Asparagus, Leafy Greens.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('GREEN VEGETABLES',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 4:- MEAL PREP</h2>
+                    <p>
+                       these meal prep containers are designed to hold portion - controlled, balanced meals, often featuring a mix of whole grains, vegetables, and lean proteins.
+                    </p>
+                    <p class="food-price">Price: &#8377; 200</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('MEAL PREP',200)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 5 :- HEALTHY SNACK PLATTER</h2>
+                    <p>
+                        This platter includes various dips like beet hummus or tzatziki, acco,plished by olives, sliced vegetables(cucunbers, avocados, tomatoes), and crispbread or crackers.
+                    </p>
+                    <p class="food-price">Price: &#8377; 350</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('HEALTHY SNACK PLATTER',350)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img class="circle-pizza" src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="A round pepperoni pizza""alt=""/>
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 7:- PIZZA</h2>
+                    <p>
+                      pizza is a flatbread dish of Italian origin that is typically topped with tomato sauce and cheese, then baked in an oven.
+                    </p>
+                    <p class="food-price">Price: &#8377; 650</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('PIZZA',650)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Momo_nepal.jpg" 
+             alt="A plate of delicious hot steamed momos" 
+             style="width: 250px; height: 250px; border-radius: 250%; object-fit: cover;""alt=""/>
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 8:- MOMO</h2>
+                    <p>
+                    Momo is a type of steamed dumpling that is incredibly popular across Tibet, Nepal, Bhutan, and India (especially in Northeast India and Delhi). It is the ultimate comfort food of South Asia—juicy on the inside, soft on the outside, and packed with flavor.
+                    </p>
+                    <p class="food-price">Price: &#8377; 200</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('MOMO',200)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                    <img 
+  src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783"
+  alt="Kebab"
+  width="250""<img 
+  src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783"
+  alt="Kebab"
+  width="200"
+  height="200"
+  style="border-radius: 50%; object-fit: cover;""alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 9:- KEBAB</h2>
+                    <p>
+                       A kebab (also spelled kabob) is a broad term for a huge variety of grilled, roasted, or broiled meat dishes that originated in the Middle East and later became incredibly popular worldwide.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p> <div class="bottom-order">
+   <button onclick="addToBill('KEBAB',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                    <img 
+  src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841"
+  alt="Noodles"
+  width="280"
+  height="280"
+  style="border-radius: 50%; object-fit: cover;""alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 10:- NOODLES</h2>
+                    <p>
+                      Noodles are long, thin strips of dough made from flour, water, and sometimes eggs. They are cooked in boiling water and used in many dishes around the world.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                     <div class="bottom-order">
+   <button onclick="addToBill('NOODLES',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                    <img 
+  src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+  alt="Samosa"
+  width="280"
+  height="280"
+  style="border-radius: 50%; object-fit: cover;""alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 11:- SAMOSA</h2>
+                    <p>
+                       Samosa is a popular crispy snack from South Asia. It is usually triangular in shape and filled with spicy potatoes, peas, onions, or meat.
+                    </p>
+                    <p class="food-price">Price: &#8377; 50</p>
+                     <div class="bottom-order">
+   <button onclick="addToBill('SAMOSA',50)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                    <img 
+  src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7"
+  alt="Kadhi Chawal"
+  width="280"
+  height="280"
+  style="border-radius: 50%; object-fit: cover;" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 12:- KADI CHAWAL</h2>
+                    <p>
+                       Kadhi Chawal is a popular Indian dish made with kadhi (a yogurt and gram flour curry) served with steamed rice (chawal).
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                     <div class="bottom-order">
+    <button onclick="addToBill('KADI CHAWAL',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+  <img 
+  src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f"
+  alt="Crispy Corn"
+  width="280"
+  height="280"
+  style="border-radius: 50%; object-fit: cover;""alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 13:- CRISPY CORN</h2>
+                    <p>
+                     Crispy corn dish is a tasty food made using boiled or cooked sweet corn mixed with spices, butter, vegetables, or sauces. It is popular as a snack and fast food item.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                     <div class="bottom-order">
+   <button onclick="addToBill('CRISPY CORN',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+ <img
+ src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" 
+alt="Spring Rolls" 
+ style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover;"alt""/>
+               </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 14:- SPRING ROLLS</h2>
+                    <p>
+                      Spring roll is a popular crispy snack made by rolling vegetables, noodles, or meat inside a thin wrapper and then frying or baking it.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p <div class="bottom-order">
+    <button onclick="addToBill('SPRING ROLLS',250)">
+    Order Now
+</button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                  <img 
+    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+    alt="Burger"
+    class="burger-img"
+    style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover;"alt""/>
+  >
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 15:- BURGER</h2>
+                    <p>
+                       A burger is a popular food item made with a cooked patty placed inside a sliced bun. The patty is usually made from ground beef, but burgers can also be made with chicken, fish, vegetables, or plant-based ingredients. Typical toppings include lettuce, tomato, onion, cheese, pickles, ketchup, mayonnaise, and mustard.
+                    </p>
+                    <p class="food-price">Price: &#8377; 100</p>
+                <div class="bottom-order">
+    <button onclick="addToBill('BURGER',100)">
+    Order Now
+</button>
+</div>
+            </div>
+        </div>
+        <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=600&auto=format&fit=crop" 
+     alt="Circular Dosa" 
+     style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 16:- DOSA</h2>
+                    <p>
+                       Dosa is a thin, crispy pancake made from a fermented batter of rice and black lentils. It’s a popular staple food from South India and is enjoyed for breakfast, lunch, or dinner.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                     <div class="bottom-order">
+   <button onclick="addToBill('DOSA',250)">
+    Order Now
+</button>
+</div>
+                </div>
+        </div>
+
+                <!-- Beautiful Cold Drinks Section With Real Images -->
+
+<section class="drinks-section">
+    <div id="drinks-section"></div>
+
+    <h2 class="section-title">Refreshing Cold Drinks</h2>
+
+    <div class="drinks-grid">
+
+        <!-- Drink 1 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=1200&auto=format&fit=crop" alt="Coca Cola">
+            <div class="drink-content">
+                <h3>Coca Cola</h3>
+                <p>₹100</p>
+                <button onclick="addToBill('Coca cola',100)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 2 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1624517452488-04869289c4ca?q=80&w=1200&auto=format&fit=crop" alt="Pepsi">
+            <div class="drink-content">
+                <h3>Pepsi</h3>
+                <p>₹100</p>
+               <button onclick="addToBill('pepsi',100)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 3 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop" alt="Sprite">
+            <div class="drink-content">
+                <h3>Sprite</h3>
+                <p>₹90</p>
+<button onclick="addToBill('sprite',90)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 4 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1499638673689-79a0b5115d87?q=80&w=1200&auto=format&fit=crop" alt="Fanta">
+            <div class="drink-content">
+                <h3>Fanta</h3>
+                <p>₹80</p>
+              <button onclick="addToBill('fanta',80)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 5 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=1200&auto=format&fit=crop" alt="Red Bull">
+            <div class="drink-content">
+                <h3>Red Bull</h3>
+                <p>₹80</p>
+               <button onclick="addToBill('red bull',80)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 6 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop" alt="Mountain Dew">
+            <div class="drink-content">
+                <h3>Mountain Dew</h3>
+                <p>₹90</p>
+                <button onclick="addToBill('mountain dew',90)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 7 -->
+        <div class="drink-card">
+            <img src="https://blog.haskells.com/hubfs/AdobeStock_63693451-1.jpeg"
+            <img src="https://images.unsplash.com/photo-1527169402691-a7b2b6f4f1f1?q=80&w=1200&auto=format&fit=crop" alt="Mojito">
+            <div class="drink-content">
+                <h3>Mojito</h3>
+                <p>₹200</p>
+                <button onclick="addToBill('mojito',200)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 8 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1200&auto=format&fit=crop" alt="Cold Coffee">
+            <div class="drink-content">
+                <h3>Cold Coffee</h3>
+                <p>₹250</p>
+                <button onclick="addToBill('cold coffee',250)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 9 -->
+        <div class="drink-card">
+            <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?q=80&w=1200&auto=format&fit=crop" alt="Chocolate Shake">
+            <div class="drink-content">
+                <h3>Chocolate Shake</h3>
+                <p>₹250</p>
+               <button onclick="addToBill('chocolate shake',250)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Drink 10 -->
+        <div class="drink-card">
+           <img src=" https://www.theepicureanmouse.com/wp-content/uploads/2022/05/IMG_2029.jpg"
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a90bb918?q=80&w=1200&auto=format&fit=crop" alt="Strawberry Shake">
+            <div class="drink-content">
+                <h3>Strawberry Shake</h3>
+                <p>₹250</p>
+               <button onclick="addToBill('Strawberryshake',250)">
+    Order Now
+</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f7fb;
+}
+
+/* Section */
+.drinks-section{
+    padding:80px 8%;
+    background:linear-gradient(135deg,#fff5f0,#eef7ff);
+}
+
+/* Title */
+.section-title{
+    text-align:center;
+    font-size:48px;
+    color:#ff5722;
+    margin-bottom:60px;
+}
+
+.section-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:#ff5722;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* Grid */
+.drinks-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* Card */
+.drink-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s ease;
+    position:relative;
+}
+
+/* Hover */
+.drink-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* Image */
+.drink-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:0.5s ease;
+}
+
+.drink-card:hover img{
+    transform:scale(1.08);
+}
+
+/* Content */
+.drink-content{
+    padding:25px;
+    text-align:center;
+}
+
+.drink-content h3{
+    font-size:26px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.drink-content p{
+    color:#ff5722;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* Button */
+.drink-content button{
+    background:linear-gradient(135deg,#ff5722,#ff784e);
+    color:white;
+    border:none;
+    padding:13px 28px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+/* Button Hover */
+.drink-content button:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 20px rgba(255,87,34,0.35);
+}
+
+</style>
+
+<script>
+
+function orderDrink(drink){
+    alert("✅ Your order for " + drink + " has been placed!");
+}
+
+</script>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Beautiful Desserts Section In Indian Rupees -->
+
+<section class="desserts-section">
+    <div id="dessert-section"></div>
+
+    <h2 class="dessert-title">🍰 Sweet Desserts</h2>
+
+    <div class="desserts-grid">
+
+        <!-- Dessert 1 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="Chocolate Cake">
+
+            <div class="dessert-content">
+                <h3>Chocolate Cake</h3>
+                <p>₹300</p>
+
+               
+                    <button onclick="addToBill('chocolate cake',300)">
+    Order Now
+</button>
+                   
+            </div>
+        </div>
+
+        <!-- Dessert 2 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1200&auto=format&fit=crop" alt="Ice Cream">
+
+            <div class="dessert-content">
+                <h3>Vanilla Ice Cream</h3>
+                <p>₹149</p>
+
+               <button onclick="addToBill('Vanillaice cream',149)">
+    Order Now
+</button>
+                 
+            </div>
+        </div>
+
+        <!-- Dessert 3 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop" alt="Cupcake">
+
+            <div class="dessert-content">
+                <h3>Strawberry Cupcake</h3>
+                <p>₹199</p>
+
+               <button onclick="addToBill('Strawberry cupcake',199)">
+    Order Now
+</button>
+                  
+            </div>
+        </div>
+
+        <!-- Dessert 4 -->
+        <div class="dessert-card">
+             <img src="https://www.sugarsaltmagic.com/wp-content/uploads/2021/11/Frosted-Chocolate-Sprinkle-Donuts-3FEAT-500x500.jpg"
+            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=1200&auto=format&fit=crop" alt="Donut">
+
+            <div class="dessert-content">
+                <h3>Chocolate Donut</h3>
+                <p>₹129</p>
+
+                <button onclick="addToBill('chocolate donut',129)">
+    Order Now
+</button>
+                  
+            </div>
+        </div>
+
+        <!-- Dessert 5 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?q=80&w=1200&auto=format&fit=crop" alt="Brownie">
+
+            <div class="dessert-content">
+                <h3>Fudge Brownie</h3>
+                <p>₹249</p>
+
+              <button onclick="addToBill('fudge Brownie',249)">
+    Order Now
+</button>
+                
+            </div>
+        </div>
+
+        <!-- Dessert 6 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop" alt="Macarons">
+
+            <div class="dessert-content">
+                <h3>French Macarons</h3>
+                <p>₹349</p>
+
+               <button onclick="addToBill('french Macarons',349)">
+    Order Now
+</button>
+                  
+            </div>
+        </div>
+
+        <!-- Dessert 7 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop" alt="Cheesecake">
+
+            <div class="dessert-content">
+                <h3>Blueberry Cheesecake</h3>
+                <p>₹299</p>
+
+               <button onclick="addToBill('Blueberry Cheesecake',299)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+        <!-- Dessert 8 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200&auto=format&fit=crop" alt="Waffles">
+
+            <div class="dessert-content">
+                <h3>Belgian Waffles</h3>
+                <p>₹279</p>
+
+               <button onclick="addToBill('Belgian waffles',279)">
+    Order Now
+</button>
+                 
+            </div>
+        </div>
+
+        <!-- Dessert 9 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=1200&auto=format&fit=crop" alt="Pancakes">
+
+            <div class="dessert-content">
+                <h3>Honey Pancakes</h3>
+                <p>₹229</p>
+
+                <button onclick="addToBill('honey Pancakes',229)">
+    Order Now
+</button>
+                
+            </div>
+        </div>
+
+        <!-- Dessert 10 -->
+        <div class="dessert-card">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1200&auto=format&fit=crop" alt="Milkshake">
+
+            <div class="dessert-content">
+                <h3>Oreo Milkshake</h3>
+                <p>₹259</p>
+
+               <button onclick="addToBill('oreo Milkshake',259)">
+    Order Now
+</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f8f8f8;
+}
+
+/* Section */
+.desserts-section{
+    padding:90px 8%;
+    background:linear-gradient(135deg,#fff1f5,#fff8ec);
+}
+
+/* Title */
+.dessert-title{
+    text-align:center;
+    font-size:52px;
+    color:#ff4081;
+    margin-bottom:70px;
+    position:relative;
+}
+
+.dessert-title::after{
+    content:'';
+    width:140px;
+    height:5px;
+    background:#ff4081;
+    display:block;
+    margin:15px auto;
+    border-radius:20px;
+}
+
+/* Grid */
+.desserts-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:35px;
+}
+
+/* Card */
+.dessert-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    transition:0.4s ease;
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Hover */
+.dessert-card:hover{
+    transform:translateY(-14px) scale(1.03);
+    box-shadow:0 22px 45px rgba(0,0,0,0.2);
+}
+
+/* Shine Effect */
+.dessert-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transition:0.8s;
+    z-index:2;
+}
+
+.dessert-card:hover::before{
+    left:100%;
+}
+
+/* Images */
+.dessert-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:0.5s ease;
+}
+
+.dessert-card:hover img{
+    transform:scale(1.08);
+}
+
+/* Content */
+.dessert-content{
+    padding:28px;
+    text-align:center;
+}
+
+.dessert-content h3{
+    font-size:26px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.dessert-content p{
+    color:#ff4081;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:22px;
+}
+
+/* Button */
+.dessert-content button{
+    background:linear-gradient(135deg,#ff4081,#ff79a8);
+    color:white;
+    border:none;
+    padding:14px 32px;
+    border-radius:35px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+/* Button Hover */
+.dessert-content button:hover{
+    transform:scale(1.08);
+    box-shadow:0 12px 24px rgba(255,64,129,0.35);
+}
+
+</style>
+
+<script>
+
+function orderDessert(dessert){
+    alert("🍨 Your order for " + dessert + " has been placed successfully!");
+}
+
+</script>
+    <section id="testimonials">
+        <h2 class="testimonial-title">WHAT OUR CUSTOMERS SAY....</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+                        <p class="customer-name">Ross Lee</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    “I had an absolutely wonderful experience at this restaurant, from the warm welcome at the entrance to the beautifully presented dishes that were full of rich and authentic flavors. The atmosphere was elegant yet comfortable, making it the perfect place to enjoy quality time with family and friends, and I can confidently say that every bite exceeded my expectations.”
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+                        <p class="customer-name">Amelia Watson</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    “What impressed me the most about this restaurant was not only the incredible taste of the food but also the exceptional hospitality shown by the staff, who made sure we were comfortable throughout the evening. The service was quick, professional, and attentive, and the overall dining experience felt truly premium and memorable.”
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                        <p class="customer-name">Ben Roy</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                   “I visited this restaurant for dinner last weekend, and I was amazed by the quality and freshness of every dish we ordered, especially the chef’s special items and desserts, which were absolutely delightful. The peaceful ambiance, stylish interiors, and attention to detail made the entire experience feel luxurious and enjoyable.”
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            </div>
+
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <!-- Beautiful Thank You Section -->
+
+
+
+<style>
+
+/* Section */
+.thankyou-section{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+    padding:20px;
+    font-family:Arial, sans-serif;
+}
+
+/* Card */
+.thankyou-card{
+    background:white;
+    max-width:650px;
+    text-align:center;
+    padding:60px 40px;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    animation:fadeIn 1.2s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Glow Effect */
+.thankyou-card::before{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,105,135,0.15);
+    border-radius:50%;
+    top:-120px;
+    right:-120px;
+}
+
+/* Heart */
+.heart{
+    font-size:80px;
+    animation:heartbeat 1.5s infinite;
+    margin-bottom:20px;
+}
+
+/* Title */
+.thankyou-card h1{
+    font-size:55px;
+    color:#ff4d6d;
+    margin-bottom:20px;
+}
+
+/* Text */
+.thankyou-card p{
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* Special Message */
+.message{
+    color:#777;
+    font-style:italic;
+}
+
+/* Button */
+.thankyou-card button{
+    margin-top:20px;
+    padding:14px 35px;
+    border:none;
+    border-radius:40px;
+    background:linear-gradient(135deg,#ff4d6d,#ff758f);
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+/* Button Hover */
+.thankyou-card button:hover{
+    transform:scale(1.08);
+    box-shadow:0 12px 25px rgba(255,77,109,0.35);
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat{
+    0%{
+        transform:scale(1);
+    }
+    25%{
+        transform:scale(1.1);
+    }
+    50%{
+        transform:scale(1);
+    }
+    75%{
+        transform:scale(1.12);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Billing Section */
+
+.billing-section{
+    background:#fff;
+    padding:40px;
+    margin:50px auto;
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.billing-section h2{
+    color:#ff5722;
+    margin-bottom:20px;
+}
+
+#order-list{
+    margin:20px 0;
+    text-align:left;
+}
+
+.order-item{
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    font-size:18px;
+}
+
+.place-order-btn{
+    margin-top:20px;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#ff5722,#ff784e);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.place-order-btn:hover{
+    transform:scale(1.05);
+}
+</style>
+
+<script>
+
+function goHome(){
+    alert("❤️ Thank you for visiting our restaurant!");
+}
+
+</script>
+<!-- BILLING SECTION -->
+
+<section class="billing-section">
+
+    <h2>Your Order Bill</h2>
+
+    <div id="order-list"></div>
+
+    <h3>Total Bill: ₹<span id="total-bill">0</span></h3>
+
+    <button class="place-order-btn" onclick="finalPlaceOrder()">
+        Place Final Order
+    </button>
+
+</section>
+    
+
+    <script>
+
+let totalBill = 0;
+
+let orders = [];
+
+/* ADD FOOD */
+
+function addToBill(itemName, price){
+
+    totalBill += price;
+
+    orders.push({
+        name:itemName,
+        price:price
+    });
+
+    updateBill();
+
+    alert("✅ " + itemName + " added to order!");
+}
+
+/* UPDATE BILL */
+
+function updateBill(){
+
+    const orderList = document.getElementById("order-list");
+
+    orderList.innerHTML = "";
+
+    orders.forEach((item)=>{
+
+        orderList.innerHTML += `
+            <div class="order-item">
+                <span>${item.name}</span>
+                <span>₹${item.price}</span>
+            </div>
+        `;
+    });
+
+    document.getElementById("total-bill").innerText = totalBill;
+}
+
+/* FINAL ORDER */
+
+function finalPlaceOrder(){
+
+    if(orders.length === 0){
+
+        alert("❌ Please order something first!");
+
+        return;
+    }
+
+    alert(
+        "🎉 Order Placed Successfully!\n\nTotal Bill: ₹" + totalBill
+    );
+
+    orders = [];
+
+    totalBill = 0;
+
+    updateBill();
+}
+
+</script>
+<script>
+
+function toggleBillMenu(){
+
+    document
+    .getElementById("billMenu")
+    .classList.toggle("show");
+
+}
+
+</script>
+<section class="thankyou-section">
+
+    <div class="thankyou-card">
+
+        <div class="heart">❤️</div>
+
+        <h1>Thank You!</h1>
+
+        <p>
+            Your order means a lot to us.  
+            We are grateful for your trust and support.
+        </p>
+
+        <p class="message">
+            Every meal is prepared with love, care, and happiness.  
+            We hope your food brings a smile to your face and warmth to your heart.
+        </p>
+
+       
+    </div>
+
+</section>
+<footer id="footer">
+        <h2>Restraunt &copy; all rights reserved</h2>
+    </footer>
+</body>
+<!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+
+</html>
